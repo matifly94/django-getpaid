@@ -1,7 +1,6 @@
 from decimal import Decimal
 from enum import Enum
-from typing import Any, List, Optional, Union
-
+from typing import Any, List, Optional, Union, TypedDict
 from django.http import HttpResponse
 
 try:
@@ -11,7 +10,6 @@ except ImportError:
     from django.utils.decorators import classproperty  # noqa F401 isort:skip
 
 from django.utils.translation import pgettext_lazy
-from typing_extensions import TypedDict
 
 
 class FraudStatus(str, Enum):

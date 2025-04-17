@@ -1,10 +1,11 @@
-""""
+""" "
 Settings:
     pos_id
     second_key
     client_id
     client_secret
 """
+
 import json
 import logging
 import os

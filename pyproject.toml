@@ -22,13 +22,11 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 django-model-utils = "^4.1.1"
 pendulum = "^2.1.2"
-
 swapper = "^1.1.2"
 django-fsm = "^2.8.0"
-typing-extensions = "^3.10.0"
 
 pytest = { version = "^6.2.4", optional = true }
 codecov = { version = "^2.1.11", optional = true }
@@ -40,13 +38,12 @@ pytest-django = { version = "^4.4.0", optional = true }
 pytest-factoryboy = { version = "^2.1.0", optional = true }
 asgiref = { version = "^3.3.4", optional = true }
 
-
 [tool.poetry.group.dev.dependencies]
 tox = "^3.24.4"
 factory-boy = "^3.2.1"
 ipdb = "^0.13.9"
 pre-commit = "^2.16.0"
-black = "^21.12-beta.0"
+black = "^25.1.0"
 isort = "^5.10.1"
 readme-renderer = "^31.0"
 monkeytype = "^21.5.0"
@@ -114,7 +111,7 @@ exclude = '''
 source = "init"
 
 [tool.isort]
-profile="black"
+profile ="black"
 
 [build-system]
 requires = ["poetry-core>=1.1.0a6"]
